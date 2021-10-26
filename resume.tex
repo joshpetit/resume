@@ -1,0 +1,90 @@
+\documentclass{resume}
+\usepackage[hidelinks]{hyperref}
+\usepackage{lipsum}
+
+\name{Joshua Petitma}
+\contact{\href{tel:757-632-9220}{757-632-9220}}
+\contact{\href{mailto:joshuapetitma@yahoo.com}{joshuapetitma@yahoo.com}}
+\contact{\href{https://github.com/joshpetit}{https://github.com/joshpetit}}
+\contact{\href{https://linkedin.com/in/YourLinkedinId}{https://linkedin.com/in/joshuapetitma}}
+
+\begin{document}
+\makeheader
+
+\newcommand{\skill}[2]{\textbf{#1} - #2}
+
+\begin{ResumeSection}{education}
+    \begin{ResumeSubsection}{location={GPA: 3.9},org={Duke University},position={Bachelor of Science in Computer Science}
+        ,duration={August 2020 - May 2024}}
+        \begin{itemize}
+            \item \skill{Relevant Coursework}{Advanced Software Design/Implementation, Web Project Design, Computer Architecture,
+                Data Structures and Algorithms, Discrete Math for Computer Science}
+            \item \skill{Clubs and Activites}{Duke Applied Machine Learning
+                Software Engineer. Started and leads an Adventist Christian Fellowship between UNC and Duke}
+            \item \skill{Notable Achievements}{Gates Scholar, Meredith Mallory
+                George Scholar, Youth -Foundation scholar}
+        \end{itemize}
+    \end{ResumeSubsection}
+\end{ResumeSection}
+
+\begin{ResumeSection}{experience}
+    \begin{ResumeSubsection}{org={Life.Church YouVersion},location={Edmond, Oklahoma},position={Frontend Web Development Intern},duration={May 2021 - August 2021}}
+        \begin{itemize}
+            \item {Worked on creating the ability to like chat messages within
+                    the Church Online Platform, a livestreaming service used by
+                thousands of churches globally.}
+            \item {Used \textit{React}, \textit{Typescript}, CSS animations, and
+                Pub Nub APIs to implement real time reactions.}
+            \item Gained important leadership and personal development skills
+                through weekly development meetings as well as numerous one on
+                ones with staff leaders
+        \end{itemize}
+    \end{ResumeSubsection}
+
+    \begin{ResumeSubsection}{org={Virginia Consulting Company},location={Virginia Beach, Virginia},position={Lead App Developer},duration={June 2021 - December 2021}}
+        \begin{itemize}
+            \item {Technical Lead and developer for a startup app. Leading a team of four to develop the app for a consulting company based in Virginia.}
+            \item {Implementing client app in Flutter and using Firebase's platform for a backend.}
+            \item {Created GitHub CI/CD pipeline for automatic backend deployment as well as code quality and test validation for client and backend}
+        \end{itemize}
+    \end{ResumeSubsection}
+
+    \begin{ResumeSubsection}{org={Petit Development, LLC},position={Founder},duration={July 2021 - Present}}
+        \begin{itemize}
+            \item Founded LLC for creating open source applications as well as
+                do web development for small businesses.
+            \item Working with non-profits to create professional website at no cost.
+        \end{itemize}
+    \end{ResumeSubsection}
+
+    \begin{ResumeSubsection}{org={Duke University CS Department},location={Durham, North Carolina},position={Advanced Software Design Teaching Assistant},duration={August 2020 - Present}}
+        \begin{itemize}
+            \item Help design course for students and make decisions on teaching topics and order.
+            \item Develops videos to help students learn technical parts of Java and JavaFX
+            \item Mentor students in weekly meetings to help track progress and grow more intentionally as software engineers.
+        \end{itemize}
+
+    \end{ResumeSubsection}
+\end{ResumeSection}
+
+
+\begin{ResumeSection}{projects}
+    \begin{itemize}
+        \item {HRDirectBot: Developed Bot to create applicant review packets for Life.Church Hiring Staff}
+            Used TypeScript, Next.js, puppeteer, and deployed to Heroku.
+        \item {Collegiate Covid: Led team of four to build website in Typescript}
+            Built backend in python to scrape statistics from college websites and upload them to firebase.
+            Use Javascript and React to display data from Firebase, deployed to Firebase hosting.
+    \end{itemize}
+\end{ResumeSection}
+
+\begin{ResumeSection}{skills}
+    \begin{ResumeSubsection}{}
+        \begin{itemize}
+            \item \skill{Languages (Order of Proficiency)}{TypeScript, Dart, Python, Java}
+            \item \skill{Software}{Firebase, Vercel, Next.js, React, Flutter}
+        \end{itemize}
+    \end{ResumeSubsection}
+\end{ResumeSection}
+
+\end{document}
