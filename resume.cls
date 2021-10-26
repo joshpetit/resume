@@ -27,7 +27,7 @@
     \MakeUppercase{\bf #1}
     \smallskip\hrule\medskip
 }{
-    \bigskip
+    %\bigskip % I took this part out cuz too much space
 }
 
 \define@key{subsection}{org}{\def\subsection@org{#1}}
