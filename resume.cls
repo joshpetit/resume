@@ -24,7 +24,9 @@
 \def \makeheader {\makebox[\textwidth]{\hfill\makename\hfill\makecontact}}
 
 \newenvironment{ResumeSection}[1]{
-    \MakeUppercase{\bf #1}
+    \MakeUppercase{
+    %\bf #1
+}
     \smallskip\hrule\medskip
 }{
     %\bigskip % I took this part out cuz too much space
@@ -32,7 +34,7 @@
 
 \define@key{subsection}{org}{\def\subsection@org{#1}}
 \define@key{subsection}{location}{\def\subsection@location{#1}}
-\define@key{subsection}{position}{\def\subsection@position{#1}}
+\define@key{subsection}{position}{\def\subsection@position{\bf #1}}
 \define@key{subsection}{duration}{\def\subsection@duration{#1}}
 \newenvironment{ResumeSubsection}[1]{
     \setkeys{subsection}{org=,location=,position=,duration=}
