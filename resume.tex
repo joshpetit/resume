@@ -14,13 +14,16 @@
 \newcommand{\skill}[2]{\textbf{#1} - #2}
 
 \begin{ResumeSection}{education}
-    \begin{ResumeSubsection}{location={GPA: 3.9},org={Duke University},position={Bachelor of Science in Computer Science}
+    \begin{ResumeSubsection}{org={Duke University},position={Bachelor of Science in Computer Science}
         ,duration={August 2020 - May 2024}}
         \begin{itemize}
-            \item \skill{Relevant Coursework}{Advanced Software Design/Implementation, Web Project Design, Computer Architecture,
-                Data Structures and Algorithms, Discrete Math for Computer Science}
-            \item \skill{Clubs}{Started and leads an Adventist Christian
-                Fellowship between all colleges in the Raleigh area.}
+            \item \skill{Coursework}{
+                    Advanced Software Design/Implementation, 
+                    %Web Project Design,
+                     Data Structures and Algorithms
+            }
+            \item \skill{Clubs}{Started and leads a Christian
+                Fellowship at Duke.}
             \item \skill{Notable Achievements}{Gates Scholar, Meredith Mallory
                 George Scholar, Youth-Foundation scholar}
         \end{itemize}
@@ -28,20 +31,39 @@
 \end{ResumeSection}
 
 \begin{ResumeSection}{experience}
+    \begin{ResumeSubsection}{org={Amazon},location={San Francisco,
+        California},position={Software Engineering Intern},duration={May 2023 -
+    July 2023}}
+        \begin{itemize}
+            \item Created and integrated screens into the Amazon Music app for iOS
+            \item Colaborated with senior developers to best migrate legacy
+                asynchrounouse code
+        \end{itemize}
+    \end{ResumeSubsection}
     \begin{ResumeSubsection}{org={Amazon},location={San Francisco, California},position={Software Engineering Intern},duration={May 2022 - July 2022}}
         \begin{itemize}
-            \item Currently interning and doing frontend web development within
-                the Amazon Music department
-            \item Working with React and Typescript in addition to Amazon's
-                build tools for AWS
+            \item Created an internal tool with ReactJS and TypeScript to allow
+                non-technical stakeholders to interface with an Amazon Music automation
+                system
+        \end{itemize}
+    \end{ResumeSubsection}
+
+    \begin{ResumeSubsection}{org={Sam Entertainment AG},location={Zurich,
+        Switzerland (remote)},position={Half-time Software Engineer},duration={January
+    2023 - Present}}
+        \begin{itemize}
+            \item Lead Flutter developer for the Sam Entertainment mobile app
+            \item Improved app startup speed by 50\% and made it offline capable
+                through caching
+            \item Developed event itinerary feature for large Zurich company
+                conference
         \end{itemize}
     \end{ResumeSubsection}
 
     \begin{ResumeSubsection}{org={Life.Church YouVersion},location={Edmond, Oklahoma},position={Software Engineering Intern},duration={May 2021 - August 2021}}
         \begin{itemize}
-            \item {Created the ability to like chat messages within
-                    the Church Online Platform, a livestreaming service used by
-                thousands of churches globally.}
+            \item {Created the ability to like chat messages within a livestreaming service used by
+                thousands of churches.}
             \item {Used React, Typescript, CSS animations, and
                 PubNub APIs to implement real time reactions.}
             \item Gained important leadership and personal development skills
@@ -51,78 +73,55 @@
 
     \begin{ResumeSubsection}{org={Widgetbook},location={Germany (remote)},position={Winter Software Engineering Intern},duration={January 2022 - April 2022}}
         \begin{itemize}
-            \item Winter intern at Widgetbook, an opensource backed startup based in Germany.
-            \item Developed the ``knobs" feature which mirrored the knobs feature from
-                Storybook.js but for Flutter.
+            \item Developed the ``knobs" feature for the flutter web app which mirrored the knobs feature from
+                Storybook.js.
         \end{itemize}
     \end{ResumeSubsection}
 
     \begin{ResumeSubsection}{org={Virginia Consulting
-        Company},location={Virginia Beach, Virginia},position={Lead App
-    Developer},duration={June 2021 - May 2022}}
+        Company},location={Virginia Beach, Virginia (remote)},position={Lead App
+    Developer},duration={June 2021 - December 2022}}
         \begin{itemize}
-            \item {Lead of a four person team developing an app for a Virginia consulting company.}
-            \item {Implementing client app in Flutter and using Firebase's platform as a service for a backend.}
-            \item {Created GitHub CI/CD pipeline for automatic backend deployment as well as code quality and test validation.}
+            \item {Led a four person team to develop an app for a Virginia consulting company.}
+            \item {Implemented client app in Flutter and used Firebase for the backend.}
+            \item {Created GitHub CI/CD for automatic backend deployment as well as code quality and test validation.}
         \end{itemize}
     \end{ResumeSubsection}
 
 
-    \begin{ResumeSubsection}{org={Petit Development, LLC},position={Founder},duration={August 2021 - Present},location={Virginia}}
-        \begin{itemize}
-            \item Founded LLC for creating open source applications as well as
-                mobile and web apps for small businesses.
-            \item Works with non-profits to create professional website at no cost.
-        \end{itemize}
-    \end{ResumeSubsection}
+    % \begin{ResumeSubsection}{org={Petit Development, LLC},position={Founder},duration={August 2021 - Present},location={Virginia}}
+    %     \begin{itemize}
+    %         \item Founded LLC for freelance mobile and web apps for small businesses.
+    %     \end{itemize}
+    % \end{ResumeSubsection}
 
 \end{ResumeSection}
 
-
 \begin{ResumeSection}{projects}
-    \begin{ResumeSubsection}{org={RefBible},location={\href{https://github.com/joshpetit/refbible}{joshpetit/refbible}}}
+    \begin{ResumeProject}{org={Bible Ram, Flutter
+        App},location={\href{https://bibleram.app}{https://bibleram.app}}}
         \begin{itemize}
-            \item {Developed Bible app in Flutter that allows users to save
-                favorite verses and search verses by topic and context.} 
-            \item {Persisted user preferences and favorites in local storage and
-                created APIs to retrieve bible texts.}
+            \item {Developed an opensource iOS and Android app with Flutter to help memorize the Bible in a quizlet
+                fashion} 
+            \item {Managed state with the bloc library,
+                used Isardb for serializing app data, and SQLite for storing
+            translations}
         \end{itemize}
-    \end{ResumeSubsection}
-    \begin{ResumeSubsection}{org={Send},location={\href{https://send.petit.dev}{https://send.petit.dev}}}
+    \end{ResumeProject}
+    \begin{ResumeProject}{org={Send, Next.js App},location={\href{https://send.petit.dev}{https://send.petit.dev}}}
         \begin{itemize}
             \item {Created responsive \href{https://send.petit.dev}{website} to store and retrieve links identified by short text.}
             \item {Implemented frontend with TypeScript, Next.js, TailwindCSS, and deployed to Vercel. Used Firebase Cloud Firestore for data storage.}
-            \item {Created Next.js API to allow users to retrieve information from the command line with cURL.}
-            \item {Designed in
-                    \href{https://www.figma.com/file/Rn2hStoJfozlgsvSoEeGnj/Send?node-id=139%3A2}{Figma}
-                    to practice creating enjoyable user
-                interfaces and responsive design.}
+            \item {Created Next.js API to allow users to easily retrieve information from the command line with cURL.}
         \end{itemize}
-    \end{ResumeSubsection}
-    % \begin{ResumeSubsection}{org={Colors},location={\href{https://colors.petit.dev}{https://colors.petit.dev}}}
-    %     \begin{itemize}
-    %         \item {Designed \href{https://colors.petit.dev}{website}
-    %             in Figma as a case study to practice creating enjoyable user interfaces and experiences.} 
-    %         \item {Implemented website with TypeScript, SASS, Next.js, and deployed to Vercel.}
-    %         \item {Created Next.js API to generate files of custom size, color, and filetype to experiment with API route design.}
-    %     \end{itemize}
-    % \end{ResumeSubsection}
-    % \begin{ResumeSubsection}{org={Collegiate Covid},position={2020 DukeHacks Hackathon},location={\href{https://collegiatecovid.com}{https://collegiatecovid.com}}}
-    %     \begin{itemize}
-    %         \item {Led team of four to build analytics website for covid metrics across U.S universities.}
-    %         \item Built backend in python to scrape statistics from college dashboards and post them to firebase.
-    %         \item Used Javascript and React to display data from Firebase, deployed frontend to Firebase hosting.
-    %     \end{itemize}
-    % \end{ResumeSubsection}
+    \end{ResumeProject}
 \end{ResumeSection}
 
 \begin{ResumeSection}{skills}
-    \begin{ResumeSubsection}{}
         \begin{itemize}
             \item \skill{Languages}{Dart, TypeScript, Python, Java}
             \item \skill{Software}{Flutter, React, Firebase, Next.js, Tailwind CSS}
         \end{itemize}
-    \end{ResumeSubsection}
 \end{ResumeSection}
 
 \end{document}

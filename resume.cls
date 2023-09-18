@@ -43,8 +43,15 @@
     \par\textbf\subsection@org\hfill\subsection@location
     \ifx\subsection@position\empty {}
     \else {\par{\em\subsection@position}\hfill{\em\subsection@duration}}
-    \fi
 }{
     \bigskip
 }
 
+\newenvironment{ResumeProject}[1]{
+    \setkeys{subsection}{org=,location=,position=,duration=}
+    \setkeys{subsection}{#1}
+    \par\textbf\subsection@org\hfill\subsection@location
+    \fi
+}{
+    \bigskip
+}
