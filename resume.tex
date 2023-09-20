@@ -1,6 +1,7 @@
 \documentclass{resume}
 \usepackage[hidelinks]{hyperref}
 \usepackage{lipsum}
+\usepackage{standalone}
 
 \name{Joshua Petitma}
 \contact{\href{tel:757-632-9220}{757-632-9220}}
@@ -9,6 +10,8 @@
 \contact{\href{https://linkedin.com/in/joshua-petitma}{https://linkedin.com/in/joshua-petitma}}
 
 \begin{document}
+%\include{cover_letter.tex}
+\pagebreak
 \makeheader
 
 \newcommand{\skill}[2]{\textbf{#1} - #2}
@@ -32,7 +35,7 @@
 
 \begin{ResumeSection}{experience}
     \begin{ResumeSubsection}{org={Amazon},location={San Francisco,
-        California},position={Software Engineering Intern},duration={May 2023 -
+        California},position={Software Engineering Intern (iOS)},duration={May 2023 -
     July 2023}}
         \begin{itemize}
             \item Created and integrated screens into the Amazon Music app for iOS
