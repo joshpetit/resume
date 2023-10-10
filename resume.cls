@@ -25,7 +25,7 @@
 
 \newenvironment{ResumeSection}[1]{
     \MakeUppercase{
-    %\bf #1
+    #1
 }
     \smallskip\hrule\medskip
 }{
@@ -44,7 +44,7 @@
     \ifx\subsection@position\empty {}
     \else {\par{\em\subsection@position}\hfill{\em\subsection@duration}}
 }{
-    \bigskip
+    \smallskip
 }
 
 \newenvironment{ResumeProject}[1]{
