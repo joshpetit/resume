@@ -44,7 +44,7 @@
     \ifx\subsection@position\empty {}
     \else {\par{\em\subsection@position}\hfill{\em\subsection@duration}}
 }{
-    \smallskip
+    \bigskip
 }
 
 \newenvironment{ResumeProject}[1]{
